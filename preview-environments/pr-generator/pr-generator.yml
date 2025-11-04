@@ -12,6 +12,8 @@ spec:
         owner: gtodd98
         repo: gitops-cert-level-3-examples
       requeueAfterSeconds: 180
+      filters:
+      - label: 'preview-ready'
   template:
     metadata:
       name: 'myapp-{{.branch}}'
